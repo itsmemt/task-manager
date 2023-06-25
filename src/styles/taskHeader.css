@@ -1,0 +1,16 @@
+.taskListHeader {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 450px) {
+  .taskHeaderContainer {
+    display: block;
+  }
+}
+@media screen and (max-width: 940px) {
+  .taskListHeader {
+    display: flex;
+    flex-direction: column;
+  }
+}

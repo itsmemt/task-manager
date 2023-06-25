@@ -1,0 +1,43 @@
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background: var(--white);
+  border-radius: 4px;
+  font-size: 1.2rem;
+  color: var(--black-2);
+}
+table {
+  font-family: sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(odd) {
+  background-color: #dddddd;
+}
+.taskTitle {
+  display: block;
+  font-weight: 600;
+  margin-top: -0.2rem;
+  text-transform: uppercase;
+}
+.date {
+  display: block;
+  font-weight: 700;
+  margin-top: -0.2rem;
+}
+.icon {
+  font-size: 2rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  background-color: var(--gray-1);
+  cursor: pointer;
+}
