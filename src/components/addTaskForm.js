@@ -8,6 +8,7 @@ import { Formik, Form, Field } from "formik";
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import * as Yup from "yup";
+import "../styles/addTaskForm.css";
 function AddTaskForm({ type, modalOpen, setModalOpen, task }) {
   const currentDate=new Date().toLocaleString().split(",")[0]
   const dispatch = useDispatch();
@@ -81,7 +82,7 @@ function AddTaskForm({ type, modalOpen, setModalOpen, task }) {
                 onSubmit={(e) => handleSubmit(e)}
                 className="w-[100%]  mt-[-100px] bg-gray-200 block text-center text-2xl p-3 flex justify-center"
               >
-                <div className="w-[50%] bg-gray-400 pb-[50px] rounded-md ">
+                <div className="w-[50%] bg-gray-400 pb-[50px] rounded-md addTaskForm">
                   <div className="flex justify-end m-2">
                     <MdOutlineClose
                       className="text-5xl justify-items-end"
