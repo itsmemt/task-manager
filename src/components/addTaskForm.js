@@ -49,9 +49,10 @@ function AddTaskForm({ type, modalOpen, setModalOpen, task }) {
         if (
           task.title !== title ||
           task.status !== status ||
-          task.description !== status
+          task.description !== description ||
+          task.date !== date
         ) {
-          dispatch(editTask({ ...task, title, status }));
+          dispatch(editTask({ ...task, title, status, description ,date}));
           toast.success("Task Updated successfully");
         } else {
           toast.error("No changes made");
