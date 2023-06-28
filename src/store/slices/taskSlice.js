@@ -46,6 +46,8 @@ export const taskSlice = createSlice({
           if (task.id === action.payload.id) {
             task.status = action.payload.status;
             task.title = action.payload.title;
+            task.date = action.payload.date;
+            task.description = action.payload.description;
           }
         });
         window.localStorage.setItem('taskList', JSON.stringify(taskListArr));
